@@ -6,7 +6,7 @@ export function Comment() {
     <div className={styles.comment}>
       <img src="https://avatars.githubusercontent.com/u/96392226?v=4" alt="" />
 
-      <div className={styles.comentBox}>
+      <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authorAndTime}>
@@ -20,7 +20,7 @@ export function Comment() {
             </div>
 
             <button title="Deletar comentário">
-              <Trash size={20} />
+              <Trash size={24} />
             </button>
           </header>
 
