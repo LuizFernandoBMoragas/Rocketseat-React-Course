@@ -1,16 +1,20 @@
+import { format } from "date-fns";
+
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post({ author, publishedAt }) {
+  const publishedDateFormatted = format(publishedAt, "LLLL d 'at' hh:mm aaaa");
+
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src="https://avatars.githubusercontent.com/u/96392226?v=4" />
+          <Avatar src={author.avatarUrl} />
           <div className={styles.authorInfo}>
-            <strong>Luiz Fernando Barros Moragas</strong>
-            <span>Full Stack Developer</span>
+            <strong>{author.name}</strong>
+            <span>{author.role}</span>
           </div>
         </div>
 
@@ -18,7 +22,7 @@ export function Post() {
           title="01 de Junho de 2022 as 23:06"
           dateTime="2022-06-01 23:06:30"
         >
-          Publicado há 1h
+          {publishedDateFormatted}
         </time>
       </header>
 
