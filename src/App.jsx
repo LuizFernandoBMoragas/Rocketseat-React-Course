@@ -15,11 +15,11 @@ const posts = [
       role: "Full Stack Developer",
     },
     content: [
-      { type: "paragraph", content: "Fala galeraa 👋 " },
+      { type: "paragraph", content: "Fala meu povo👋 " },
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz por que quis, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
       { type: "link", content: "jane.design/doctorcare" },
     ],
@@ -41,7 +41,7 @@ const posts = [
       },
       { type: "link", content: "jane.design/doctorcare" },
     ],
-    publishedAt: new Date("2022-06-03 01:00:00"),
+    publishedAt: new Date("2022-06-07 19:00:00"),
   },
 ];
 
